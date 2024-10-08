@@ -1,0 +1,22 @@
+.local{
+    padding: 5.6vw;
+    margin: 3rem 0px 5rem 0px;
+
+    &__container{
+
+        &__content{
+
+            .title{
+
+                margin: 2rem 0px;
+            }
+        }
+
+        img{
+            max-width: 100%;
+            width: 100%;
+            border-radius: 10px;
+
+        }
+    }
+}

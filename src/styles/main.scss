@@ -1,0 +1,86 @@
+@use '__hero';
+@use '__sobre-festa';
+@use '__mensagem';
+@use '__footer';
+@use '__local';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+body{
+    background-image: url(../images/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.title--big{
+    font-size: 44px;
+    font-weight: bold;
+    text-shadow: -2px 2px 2px rgba(40, 39, 39, 0.333);
+
+    @media (max-width: 640px) {
+        font-size: 34px;
+    }
+}
+
+.title{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.title--small{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.gradient{
+    background: linear-gradient(90deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.text{
+    font-size: 22px;
+    color: white;
+    font-weight: 400;
+
+}
+
+.btn{
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 5px 5px 18px 2px rgba(30, 131, 194, 0.186);
+
+    &--primary{
+        color: rgb(255, 255, 255);
+        background-image: linear-gradient(90deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%);
+        transition: all .3s ease;
+
+        &:hover{
+            transform: scale(0.98);
+            background-image: linear-gradient(90deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%);
+            box-shadow: 0px 0px 8px 3px rgba(40, 39, 39, 0.703);
+        }
+    }
+}
+
+.flex{
+    display: flex;
+    gap: 12px;
+}

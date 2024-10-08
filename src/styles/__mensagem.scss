@@ -1,0 +1,80 @@
+.mensagem{
+padding: 5.6vw;
+max-width: 1024px;
+margin: 0 auto;
+
+    h2{
+        margin-bottom: 2rem;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+        margin-bottom: 12rem;
+
+
+        label{
+            color: white;
+        }
+
+
+        input,
+        label{
+            width: 100%;
+            max-width: 100%;
+            border: none;
+            border-radius: 10px;
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        input{
+            padding-left: 1rem;
+            color: black;
+            height: 40px;
+            margin-top: 12px;
+        }
+
+        .btn{
+            transform: translateY(24px);
+            min-width: 150px;
+            width: 50%;
+            margin: 0 auto;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &--primary:hover{
+                transform: scale(1);
+            }
+        }
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        }
+        th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+
+        @media (max-width: 640px) {
+            max-width: 40px;
+            overflow: hidden;
+        }
+        }
+        th {
+        background-color: #f2f2f2;
+        color: black;
+        }
+        tr:hover {
+        background-color: #287acd;
+        }
+}
